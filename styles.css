@@ -1,0 +1,513 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+scroll-behavior: smooth;
+}
+body{
+    height: 1000px;
+  
+}
+.sticky{
+   background: #fff;
+   color: #111;
+   padding: 30px 100px;
+   box-shadow: 0 5px 20px rgba(0,0,0,.05);
+   transition: .5s;
+}
+.sticky a{
+    color: #111;
+}
+
+header{
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 100px;
+}
+header .logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.menuToggler{
+    display: none;
+}
+header .menu{
+    display: flex;
+    justify-content: space-between;
+}
+header li{
+    margin-left: 30px;
+    list-style: none;
+    font-size: 1.1em;
+}
+header a{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease-in;
+}
+header li a:hover{
+    color: var(--primary-color);
+}
+header span,.left span,.heading span{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.left span,.heading span{
+    font-size: 1.5em;
+}
+.banner-container{
+width: 100%;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background:url("img/bg.jpg") ;
+background-size: cover;
+position: relative;
+}
+.banner-container .banner-content{
+    text-align: center;
+    max-width: 820px;
+}
+.banner-content h2{
+    color: rgb(252, 240, 240);
+    font-size: 5em;
+    text-transform: capitalize;
+}
+.banner-content p{
+    color: #fff;
+    font-size: 1.1em;
+}
+.banner-content a,.menu-container a,.contactContainer input[type=submit] {
+    font-size: 1em;
+    color: #fff;
+    background: var(--primary-color);
+    display: inline-block;
+    padding: 8px 35px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: .5s;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+}
+.banner-content a:hover,.menu-container a:hover,.contactContainer input[type=submit]:hover{
+    letter-spacing: 4px;
+}
+.about-container{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    padding: 100px 100px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.left{
+    flex: 1;
+    padding-right: 60px;
+}
+.left h3,.heading h3{
+font-size: 2em;
+letter-spacing: 2px;
+font-weight: 500;
+margin-bottom: 20px;
+}
+.left .content{
+    font-size: 1.1em;
+    font-family: 300;
+    margin-bottom: 20px;
+    line-height: 150%;
+}
+.right{
+    flex: 1;
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu-container{
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+  position: relative;
+  padding-bottom: 50px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.heading P{
+    margin-bottom: 50px;
+}
+.menu-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box{
+    width: 340px;
+    margin: 20px;
+    border: 10px solid rgb(255, 255, 255);
+    box-shadow: 0 5px 20px rgba(0,0,0,.09);
+    transition: .5s ease-in-out;
+}
+
+.food_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.food_name{
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 1.1em;
+ }
+ .box:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+.menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-content .box:nth-child(1),
+.menu-content .box:nth-child(2),
+.menu-content .box:nth-child(3),
+    .menu-content .box:nth-child(4),
+    .menu-content .box:nth-child(5),
+    .menu-content .box:nth-child(6)
+{
+    display: block
+ }
+ .menu-content .box:nth-child(7),
+ .menu-content .box:nth-child(8),
+ .menu-content .box:nth-child(9)
+ {
+     display: none;
+  }
+.expert-container{
+    padding-left: 100px;
+    padding-right: 100px;
+  position: relative;
+  padding-bottom: 50px;
+}
+.expert-container .heading{
+    padding-top: 30px;
+}
+.expert-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.expertBox{
+    width: 250px;
+    height: 400px;
+    margin-right: 30px;
+}
+.expertBox  img{
+width: 100%;
+height: 80%;
+object-fit: cover;
+}
+.expert_name{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.testimonals-container{
+    /* width: 100%; */
+    min-height: calc( 100vh - 60px);
+    background:url("img/bg2.jpg") ;
+background-size: cover;
+background-attachment: fixed;
+/* position: relative;
+padding-left:100px;
+padding-right:100px; */
+padding-left: 100px;
+padding-right: 100px;
+position: relative;
+padding-bottom: 50px;
+}
+.testimonals-container .heading{
+    padding-top:30px;
+    color:#fff;
+}
+.for_slick_slider{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.for_slick_slider .items{
+    /* padding: 30px 20px; */
+    margin: 30px; 
+    background-color: white;
+    transition: all linear .4s;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.for_slick_slider .items img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top:30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.for_slick_slider .items .expert_words{
+    font-size: .9em;
+    text-align: center;
+    font-weight: 350;
+    font-style: italic;
+    line-height: 2;    
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.for_slick_slider .items .expert_name{
+text-align: center;
+margin-bottom: 30px;
+}
+.for_slick_slider .slick-center{
+transform:scale(1.1);
+}
+
+.contactContainer{
+    background: url("img/bg3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: calc( 100vh - 60px);
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+    padding-bottom: 60px;
+}
+.contactContainer .heading{
+    padding-top:40px;
+}
+.contactForm{
+    width: 400px;
+   padding: 60px 40px;
+    background-color: rgba(255, 255, 255,.7);
+  box-shadow: 0 5px 20px rgba(0,0,0,.09);
+  display: flex;
+  flex-direction: column;
+}
+.contactForm h4{
+    margin-bottom: 15px;
+}
+.input-group{
+    margin-bottom: 10px;
+    position: relative;
+}
+.input-group input,.input-group textarea{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    color: #333;
+}
+.input-group textarea{
+    resize: none;
+}
+.input-group label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 1em;
+}
+.input-group input:focus~label,
+.input-group input:valid~label,
+.input-group textarea:focus~label,
+.input-group textarea:valid~label {
+position: absolute;
+top: -10px;
+font-size: .7em;
+transition: .5s ease-in-out;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+footer span{
+    color: var(--primary-color);
+    margin-left: 5px;
+}
+@media screen and (max-width: 1020px) {
+    .banner-content h2{
+        font-size: 4em;
+        padding-bottom: 10px;
+    }
+    .banner-container p{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .about-container{
+        flex-direction: column;
+        }
+        .left,.right{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .right{
+            padding-top: 20px;
+        }
+        .box{
+            width: 265px;
+        }
+        .testimonals-container,.expert-container,.contactContainer,.menu-container,.about-container{
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: center;
+            /* height: auto; */
+        }
+        .testimonals-container,.contactContainer{
+            min-height: 0;
+        }
+}
+@media screen and (max-width: 850px) {
+header .menu{
+    display: none;
+}
+header .menuToggler{
+    background-image: url("img/toggler.svg") ;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+header li a{
+    color: #000;
+}
+header .menuToggler.active{
+    background-image: url("img/icons8-close-64.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 35px;
+    right: 25px;
+}
+header .menu.active{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top:91px;
+    right:0px;
+    background-color: rgba(255, 255, 255,.9);
+    color: #000;
+}
+header  .menu.active li{
+    margin-bottom: 15px;
+    list-style: none;
+    font-size: 1.1em;
+    text-align: center;
+    color: #000;
+}
+header  .menu.active a{
+    text-decoration: none;
+    transition: .3s ease-in;
+}
+header  .menu.active li a:hover{
+    color: var(--primary-color);
+}
+}
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .banner-container,.about-container{
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+.about-container{
+    flex-direction: column;
+    }
+    .left,.right{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .right{
+        padding-top: 20px;
+    }
+    .expertBox{
+        margin-right: 0;
+    }
+    .testimonals-container,.expert-container,.contactContainer,.menu-container,.about-container{
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        height: auto;
+
+    }
+    .banner-container{
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        min-height: 100vh;
+    }
+    .contactContainer{
+        background: none;
+    }
+    .contactForm{
+        width: 100%;
+    }
+    .expert-container .heading,.testimonals-container .heading,.contactContainer .heading,.about-container,.menu-container .heading{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .heading p{
+        margin-bottom: 0px;
+    }
+    .banner-content h2{
+        font-size: 3em;
+    }
+    .left h3,.heading h3{
+        font-size: 1.8em;
+    }
+    .banner-content p,.left .content,.heading p,.food_name,.expert_name,.input-group label,footer{
+        font-size: 1em;
+    }
+  
+.for_slick_slider .items img{
+    width: 50px;
+    height: 50px;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .for_slick_slider .slick-center{
+        transform:none
+        }
+        
+}
