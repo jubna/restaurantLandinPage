@@ -420,8 +420,11 @@ header .menuToggler.active{
     right: 25px;
 }
 header .menu.active{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
+    height:100vh;
     position: absolute;
     top:91px;
     right:0px;
@@ -429,11 +432,12 @@ header .menu.active{
     color: #000;
 }
 header  .menu.active li{
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     list-style: none;
     font-size: 1.1em;
     text-align: center;
     color: #000;
+
 }
 header  .menu.active a{
     text-decoration: none;
